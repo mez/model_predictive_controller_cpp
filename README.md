@@ -14,9 +14,11 @@ We are using a simple kinematic model with the following state variables:
 3. `psi` The current steering angle in radians.
 4. `v` The current velocity in mph.
 
+#### Error Variables
 Note: We also added the following to our state representation (although technically not part of the state)
-5. `cte` The cross track error is the difference between our desired position and actual position.
-6. `epsi` The orientation error is the difference beween our desired heading and actual heading.
+
+1. `cte` The cross track error is the difference between our desired position and actual position.
+2. `epsi` The orientation error is the difference beween our desired heading and actual heading.
 
 #### Actuator Variables
 
