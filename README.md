@@ -57,7 +57,7 @@ The hyperparameters N and dt can have dramatic effect of the model outcome.
 
 Having `T` span beyond one second seems to give me useless results.
 Also having `dt` being too small was causing too many actuations and required much compute time.
-I started with `N=15 and dt=.05` this was causing to much zig-zaging.
+I started with `N=15 and dt=.05` this was causing too much zig-zaging.
 I finally landed on `N=10 and dt=0.1` to give me stable results. It was a manual tuning process.
 
 ## Polynomial Fitting and MPC Preprocessing
@@ -79,6 +79,16 @@ for (int i = 0; i < ptsx.size(); ++i) {
 Finally, I fit a third order polynomial to these way points.
 The coefficients from the polynomial is what the solver uses to 
 make the predictions.
+
+The solver returns:
+```
+std::vector<double> predicted_x_vals; // Predicted x values for N steps.
+std::vector<double> predicted_y_vals; // Predicted y values for N steps.
+double steering; //Predicted Steering
+double throttle; //Predicted throttle.
+
+//for example mpc.steering
+```
 
 ## Model Predictive Control with Latency
 
