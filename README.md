@@ -116,7 +116,7 @@ we used CPPAD to do automatic differentiation!
 
 ## Objective Function Weights
 
-Notice I added weights `w1-w7` which had to also tuned. The weights I 
+Notice I added weights `w1-w7` which had to also be tuned. The weights I 
 eventually landed on are below:
 
 ```
