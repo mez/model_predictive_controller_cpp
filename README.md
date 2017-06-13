@@ -9,8 +9,8 @@ The model has a few different components. The state, actuators and update equati
 We are using a simple kinematic model with the following state variables:
 
 #### State Variables
-1. `x` The global x position of the car.
-2. `y` The global y position of the car.
+1. `x` The x position of the car.
+2. `y` The y position of the car.
 3. `psi` The current steering angle in radians.
 4. `v` The current velocity in mph.
 
