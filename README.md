@@ -44,7 +44,7 @@ where:
  epsi = psi - desired_psi
  desired_psi = arctan(f'(x))
  
- f(x) = referenced trajactory
+ f(x) = referenced trajectory
 ```
 
 ## Timestep Length and Elapsed Duration (N & dt)
